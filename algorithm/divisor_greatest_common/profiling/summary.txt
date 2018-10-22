@@ -2,8 +2,10 @@
 	gcd(1000000000, 876543210)
 	result is 10;
 
+func			dt
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 full			2711 ms
-full_reverse	3861 ms (return in  ver) see that profile.
-full_reverse	2923 ms (return out ver) see that profile.
+full_reverse		3861 ms (return in  ver) see that profile.
+full_reverse		2923 ms (return out ver) see that profile.
 euclidean_recur	167  ns
-euclidean_iter	90   ns
+euclidean_iter		90   ns
