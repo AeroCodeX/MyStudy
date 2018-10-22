@@ -30,6 +30,9 @@
     <ClCompile Include="gcd_euclidean_recursion.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="multi_gcd_euclidean.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gcd.h">

@@ -120,6 +120,7 @@
     <ClCompile Include="gcd_full_scan.cpp" />
     <ClCompile Include="gcd_full_scan_reverse.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="multi_gcd_euclidean.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gcd.h" />
