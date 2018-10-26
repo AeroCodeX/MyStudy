@@ -14,7 +14,7 @@ bool check_prime_eratos(int n)
 		for (int i = 2; i < ERATOS_MAX + 1; i++)
 		{
 			if (!eratos[i]) continue;
-			for (int k = 0; i*k <= ERATOS_MAX; k++)
+			for (int k = 2; i*k <= ERATOS_MAX; k++)
 			{
 				eratos[i*k] = false;
 			}
