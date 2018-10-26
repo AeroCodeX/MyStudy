@@ -17,7 +17,7 @@ int main() {
 
 	//! TEST회 만큼 반복한다.
 	s = chrono::system_clock::now();
-	while (T--) ret = divisor_sqrt_scan_2(1000000000);
+	while (T--) ret = divisor_sqrt_scan(1500000000);
 	e = chrono::system_clock::now();
 
 	//! 평균 걸린시간 출력.
