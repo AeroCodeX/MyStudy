@@ -1,4 +1,4 @@
-#include "prime_number.h"
+ï»¿#include "prime_number.h"
 
 bool atkin[PRIME_MAX + 1];
 bool atkin_init = false;
@@ -8,13 +8,13 @@ bool* generate_prime_atkin()
 {
 	if (!atkin_init)
 	{
-		// ¹è¿­ ÃÊ±âÈ­
-		// (Atkin) ÀüºÎ Composite·Î °¡Á¤ÇÑ´Ù.
+		// ë°°ì—´ ì´ˆê¸°í™”
+		// (Atkin) ì „ë¶€ Compositeë¡œ ê°€ì •í•œë‹¤.
 		memset(atkin, false, sizeof(atkin));
 
 
-		// Á¶°Ç °Ë»ç
-		// (Atkin) °¢ Á¶°Ç¿¡ ¸ÂÀ»¶§¸¶´Ù ¹İÀü½ÃÅ²´Ù.
+		// ì¡°ê±´ ê²€ì‚¬
+		// (Atkin) ê° ì¡°ê±´ì— ë§ì„ë•Œë§ˆë‹¤ ë°˜ì „ì‹œí‚¨ë‹¤.
 		int n;
 		for (int x = 1; x * x < PRIME_MAX; x++) {
 			for (int y = 1; y * y < PRIME_MAX; y++) {
@@ -40,14 +40,14 @@ bool* generate_prime_atkin()
 				// When  r is something else.
 			}
 		}
-		// (Atkin) ¼Ò¼öÀÇ Á¦°öÀº CompositeÀÌ´Ù.
+		// (Atkin) ì†Œìˆ˜ì˜ ì œê³±ì€ Compositeì´ë‹¤.
 		for (int r = 5; r * r <= PRIME_MAX; r++) {
 			if (atkin[r]) {
 				for (int i = r * r; i <= PRIME_MAX; i += r * r)
 					atkin[i] = false;
 			}
 		}
-		// (Atkin) ³ªÁß¿¡ 5ÀÌÇÏÀÇ ¼ö´Â ¸í½ÃÀûÀ¸·Î ¼³Á¤ÇÑ´Ù.
+		// (Atkin) ë‚˜ì¤‘ì— 5ì´í•˜ì˜ ìˆ˜ëŠ” ëª…ì‹œì ìœ¼ë¡œ ì„¤ì •í•œë‹¤.
 		atkin[0] = atkin[1] = atkin[4] = false;
 		atkin[2] = atkin[3] = atkin[5] = true;
 

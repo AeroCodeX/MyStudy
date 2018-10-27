@@ -1,4 +1,4 @@
-#include "prime_number.h"
+ï»¿#include "prime_number.h"
 
 bool eratos[PRIME_MAX + 1];
 bool eratos_init = false;
@@ -8,15 +8,15 @@ bool* generate_prime_eratos()
 {
 	if (!eratos_init)
 	{
-		// ¹è¿­ ÃÊ±âÈ­
-		// (Eratos) ÀüºÎ PrimeÀ¸·Î °¡Á¤ÇÑ´Ù.
+		// ë°°ì—´ ì´ˆê¸°í™”
+		// (Eratos) ì „ë¶€ Primeìœ¼ë¡œ ê°€ì •í•œë‹¤.
 		memset(eratos, true, sizeof(eratos));
 		eratos[0] = false;
 		eratos[1] = false;
 
 
-		// Á¶°Ç °Ë»ç
-		// (Eratos) ¼Ò¼öÀÇ ¹è¼ö´Â CompositeÀÌ´Ù.
+		// ì¡°ê±´ ê²€ì‚¬
+		// (Eratos) ì†Œìˆ˜ì˜ ë°°ìˆ˜ëŠ” Compositeì´ë‹¤.
 		for (int i = 2; i < PRIME_MAX + 1; i++)
 		{
 			if (!eratos[i]) continue;

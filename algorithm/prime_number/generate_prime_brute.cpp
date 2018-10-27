@@ -1,4 +1,4 @@
-#include "prime_number.h"
+ï»¿#include "prime_number.h"
 
 bool brute[PRIME_MAX + 1];
 bool brute_init = false;
@@ -8,15 +8,15 @@ bool* generate_prime_brute()
 {
 	if (!brute_init)
 	{
-		// ¹è¿­ ÃÊ±âÈ­
-		// (Brute) ÀüºÎ PrimeÀ¸·Î °¡Á¤ÇÑ´Ù.
+		// ë°°ì—´ ì´ˆê¸°í™”
+		// (Brute) ì „ë¶€ Primeìœ¼ë¡œ ê°€ì •í•œë‹¤.
 		memset(brute, true, sizeof(brute));
 		brute[0] = false;
 		brute[1] = false;
 
 
-		// Á¶°Ç °Ë»ç
-		// (Brute) ±¸°£[2, N)ÀÇ ¼ö·Î ³ª´²Áö¸é CompositeÀÌ´Ù.
+		// ì¡°ê±´ ê²€ì‚¬
+		// (Brute) êµ¬ê°„[2, N)ì˜ ìˆ˜ë¡œ ë‚˜ëˆ ì§€ë©´ Compositeì´ë‹¤.
 		for (int i = 2; i <= PRIME_MAX; i++)
 		{
 			for (int j = 2; j < i; j++)

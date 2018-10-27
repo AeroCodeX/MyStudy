@@ -1,5 +1,4 @@
-
-#include <iostream>
+﻿#include <iostream>
 #include <chrono>
 #include "prime_number.h"
 using namespace std;

@@ -1,4 +1,4 @@
-#include "prime_number.h"
+ï»¿#include "prime_number.h"
 #include <math.h>
 
 bool eratos_improved[PRIME_MAX + 1];
@@ -9,19 +9,19 @@ bool* generate_prime_eratos_improved()
 {
 	if (!eratos_improved_init)
 	{
-		// ¹è¿­ ÃÊ±âÈ­
-		// (Eratos_improved) ÀüºÎ PrimeÀ¸·Î °¡Á¤ÇÑ´Ù.
+		// ë°°ì—´ ì´ˆê¸°í™”
+		// (Eratos_improved) ì „ë¶€ Primeìœ¼ë¡œ ê°€ì •í•œë‹¤.
 		memset(eratos_improved, true, sizeof(eratos_improved));
 		eratos_improved[0] = false;
 		eratos_improved[1] = false;
 
 
-		// Á¶°Ç °Ë»ç
-		// (Eratos_improved) ¼Ò¼öÀÇ ¹è¼ö´Â CompositeÀÌ´Ù.
-		// (Eratos_improved) ¼Ò¼öÀÇ ¹è¼ö´Â CompositeÀÌ´Ù.
-		// (Eratos_improved) ¼Ò¼öÀÇ °¡´É¼ºÀÌ ÀÖÀ¸·Á¸é 6i¡¾1 ÀÌ¾î¾ß ÇÑ´Ù.
-		sieve(2, eratos_improved);	// ¿¹¿ÜÃ³¸®
-		sieve(3, eratos_improved);	// ¿¹¿ÜÃ³¸®
+		// ì¡°ê±´ ê²€ì‚¬
+		// (Eratos_improved) ì†Œìˆ˜ì˜ ë°°ìˆ˜ëŠ” Compositeì´ë‹¤.
+		// (Eratos_improved) ì†Œìˆ˜ì˜ ë°°ìˆ˜ëŠ” Compositeì´ë‹¤.
+		// (Eratos_improved) ì†Œìˆ˜ì˜ ê°€ëŠ¥ì„±ì´ ìˆìœ¼ë ¤ë©´ 6iÂ±1 ì´ì–´ì•¼ í•œë‹¤.
+		sieve(2, eratos_improved);	// ì˜ˆì™¸ì²˜ë¦¬
+		sieve(3, eratos_improved);	// ì˜ˆì™¸ì²˜ë¦¬
 		int end = sqrt(PRIME_MAX);
 		for (int i = 6; i <= end+6; i+=6)
 		{

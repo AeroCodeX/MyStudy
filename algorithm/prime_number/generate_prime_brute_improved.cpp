@@ -1,5 +1,4 @@
-
-#include "prime_number.h"
+ï»¿#include "prime_number.h"
 #include <vector>
 using namespace std;
 
@@ -13,15 +12,15 @@ bool* generate_prime_brute_improved()
 	{
 		vector<int> primes;
 
-		// ¹è¿­ ÃÊ±âÈ­
-		// (Dynamic) ÀüºÎ PrimeÀ¸·Î °¡Á¤ÇÑ´Ù.
+		// ë°°ì—´ ì´ˆê¸°í™”
+		// (Dynamic) ì „ë¶€ Primeìœ¼ë¡œ ê°€ì •í•œë‹¤.
 		memset(dynamic, true, sizeof(dynamic));
 		dynamic[0] = false;
 		dynamic[1] = false;
 
 
-		// Á¶°Ç °Ë»ç
-		//! (Dynamic) Áö±İ±îÁö ¹ß°ßµÈ ¼Ò¼ö·Î ³ª´²Áö¸é CompositeÀÌ´Ù.
+		// ì¡°ê±´ ê²€ì‚¬
+		//! (Dynamic) ì§€ê¸ˆê¹Œì§€ ë°œê²¬ëœ ì†Œìˆ˜ë¡œ ë‚˜ëˆ ì§€ë©´ Compositeì´ë‹¤.
 		for (int i = 2; i <= PRIME_MAX; i++)
 		{
 			for (int prime : primes)

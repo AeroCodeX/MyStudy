@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string.h>
 #define PRIME_MAX 100000000
 
