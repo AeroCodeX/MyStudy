@@ -1,0 +1,9 @@
+
+
+PRIME_MAX	 10,000,000
+eratos	4461 ms
+eratos2	2523 ms
+atkin	2527 ms
+
+
+PRIME_MAX	100,000,000

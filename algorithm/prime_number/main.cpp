@@ -12,17 +12,14 @@ int main() {
 	chrono::duration<double> dt;
 
 	//! Variable for algolithm.
-	bool ret;
+	bool *map;
 	int T = TEST;
 
 	//! Repeat {TEST} times.
 	s = chrono::system_clock::now();
 	while (T--)
 	{
-		for (int i = 1; i <= 200000; i++)
-		{
-			ret = check_prime_full(i);
-		}
+		map = generate_prime_eratos_improved();
 	}
 	e = chrono::system_clock::now();
 
