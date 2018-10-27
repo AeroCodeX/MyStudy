@@ -18,14 +18,11 @@ int main() {
 	s = chrono::system_clock::now();
 	while (T--)
 	{
-		map = generate_prime_eratos_improved();
+		map = generate_prime_atkin();
 	}
 	e = chrono::system_clock::now();
 
 	//! Print out dt.
 	dt = e - s;
 	cout << "dt : " << chrono::duration_cast<chrono::milliseconds>(dt).count() / TEST << endl;
-	
-	// wait...
-	while (1);
 }

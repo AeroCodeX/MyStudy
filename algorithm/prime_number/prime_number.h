@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include <string.h>
-#define PRIME_MAX 100000000
+#define PRIME_MAX 1000000000
 
 bool* generate_prime_brute();
 bool* generate_prime_brute_improved();
