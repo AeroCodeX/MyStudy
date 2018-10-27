@@ -13,7 +13,7 @@ void inline sieve(int n, bool* map)
 	int next = 2 * n;
 	while (next <= PRIME_MAX)
 	{
-		memset(&map[next], false, sizeof(bool));
+		memset(&map[next], false, sizeof(bool)); // fast version of (map[next] = false);
 		next += n;
 	}
 }

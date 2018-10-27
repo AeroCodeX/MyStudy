@@ -7,3 +7,6 @@ atkin	2527 ms
 
 
 PRIME_MAX	100,000,000
+eratos	19981 ms
+eratos2	12510 ms
+atkin	11151 ms
