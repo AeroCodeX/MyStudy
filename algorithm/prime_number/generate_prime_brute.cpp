@@ -1,6 +1,6 @@
 #include "prime_number.h"
 
-bool brute[0 + 1];
+bool brute[PRIME_MAX + 1];
 bool brute_init = false;
 
 

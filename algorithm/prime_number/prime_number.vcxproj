@@ -119,7 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="generate_prime_atkin.cpp" />
-    <ClCompile Include="generate_prime_dynamic.cpp" />
+    <ClCompile Include="generate_prime_brute_improved.cpp" />
     <ClCompile Include="generate_prime_eratos.cpp" />
     <ClCompile Include="generate_prime_eratos_improved.cpp" />
     <ClCompile Include="generate_prime_brute.cpp" />

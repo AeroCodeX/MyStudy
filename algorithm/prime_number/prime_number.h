@@ -3,7 +3,7 @@
 #define PRIME_MAX 100000000
 
 bool* generate_prime_brute();
-bool* generate_prime_dynamic();
+bool* generate_prime_brute_improved();
 bool* generate_prime_eratos();
 bool* generate_prime_eratos_improved();
 bool* generate_prime_atkin();

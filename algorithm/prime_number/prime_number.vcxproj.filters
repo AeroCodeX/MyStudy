@@ -29,13 +29,13 @@
     <ClCompile Include="generate_prime_brute.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="generate_prime_dynamic.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="generate_prime_eratos.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="generate_prime_eratos_improved.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="generate_prime_brute_improved.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
