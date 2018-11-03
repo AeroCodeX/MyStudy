@@ -18,7 +18,7 @@ bool* generate_prime_eratos_improved()
 
 		// 조건 검사
 		// (Eratos_improved) 소수의 배수는 Composite이다.
-		// (Eratos_improved) 소수의 배수는 Composite이다.
+		// (Eratos_improved) sqrt(n)까지만 조사하면 된다.
 		// (Eratos_improved) 소수의 가능성이 있으려면 6i±1 이어야 한다.
 		sieve(2, eratos_improved);	// 예외처리
 		sieve(3, eratos_improved);	// 예외처리
