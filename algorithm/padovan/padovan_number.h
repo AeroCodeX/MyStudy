@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 long long pado_recursion(int n);
 long long pado_recursion_memoized(int n);

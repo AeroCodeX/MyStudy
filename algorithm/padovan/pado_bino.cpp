@@ -1,13 +1,13 @@
-#include "padovan_number.h"
+ï»¿#include "padovan_number.h"
 #include <stdio.h>
 long long bino(int n, int r);
 
 long long pado_bino(int n)
 {
-	// long long À¸·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Â ÇÑ°è.
+	// long long ìœ¼ë¡œ í‘œí˜„í•  ìˆ˜ ìžˆëŠ” í•œê³„.
 	if (161 < n) return -1;
 
-	// bino ¿À¹öÇÃ·Î¿ì ÇÑ°è
+	// bino ì˜¤ë²„í”Œë¡œìš° í•œê³„
 	if (154 < n) return -1;
 
 	if (n <= 2) return 1;
