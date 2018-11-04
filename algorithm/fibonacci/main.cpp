@@ -7,7 +7,8 @@ using namespace std;
 #define stop while(1);
 #define TEST 1
 
-int main() {
+int main() 
+{
 	//! 시간측정을 위한 변수선언,
 	chrono::system_clock::time_point s, e;
 	chrono::duration<double> dt;
@@ -20,7 +21,7 @@ int main() {
 	s = chrono::system_clock::now();
 	while (T--)
 	{
-		ret = pisano(987654);
+		ret = fibo_matrix_fast(-1);
 	}
 	e = chrono::system_clock::now();
 	cout << ret << endl;
@@ -30,4 +31,5 @@ int main() {
 	cout << "dt : " << chrono::duration_cast<chrono::nanoseconds>(dt).count() / TEST << endl;
 
 	stop
+
 }

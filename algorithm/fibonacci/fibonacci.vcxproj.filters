@@ -33,6 +33,12 @@
     <ClCompile Include="pisano.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="fibo_iterative_queue.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fibo_matrix_fast.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fibonacci.h">

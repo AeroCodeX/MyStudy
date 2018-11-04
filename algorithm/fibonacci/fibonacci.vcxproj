@@ -116,7 +116,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fibo_iterative.cpp" />
+    <ClCompile Include="fibo_iterative_queue.cpp" />
     <ClCompile Include="fibo_matrix.cpp" />
+    <ClCompile Include="fibo_matrix_fast.cpp" />
     <ClCompile Include="fibo_recursion.cpp" />
     <ClCompile Include="fibo_recursion_memoized.cpp" />
     <ClCompile Include="main.cpp" />
