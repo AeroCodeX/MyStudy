@@ -19,8 +19,3 @@ long long fibo_recursion_memoized(int n)
 	
 	return fibo_memo[n];
 }
-
-void fibo_recursion_memo_clear()
-{
-	fibo_init = false;
-}
