@@ -13,7 +13,7 @@ long long pisano(long long mod)
 
 	while (p != 3)
 	{
-		queue[q % 3] = (queue[(q - 1) % 3] + queue[(q - 2) % 3]) % mod;
+		queue[q % 3] = (queue[(q - 1) % 3] % mod + queue[(q - 2) % 3] % mod) % mod;
 		cnt++;
 		queue[q % 3] == beginPart[p] ? p++ : p = 0;
 		if (++q >= 6)q = 3;
