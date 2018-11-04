@@ -19,12 +19,9 @@ int main() {
 	s = chrono::system_clock::now();
 	while (T--)
 	{
-		for (int i = 85; i<120; i++)
-		{
-			printf("%d %lld \n", i, pado_iterative_queue(i));
-		}
+		ret = pado_iterative(90);
 	}
-	// printf("%lld\n", ret);
+	printf("%lld\n", ret);
 	e = chrono::system_clock::now();
 
 	//! Print out dt.

@@ -2,6 +2,9 @@
 
 long long pado_iterative_queue(int n)
 {
+	// long long 으로 표현할 수 있는 한계.
+	if (161 < n) return -1;
+
 	if (n <= 2) return 1;
 	
 	long long queue[4] = { 1, 1, 1 };
