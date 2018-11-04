@@ -1,15 +1,15 @@
-#include "fibonacci.h"
+ï»¿#include "fibonacci.h"
 #include <string.h>
 long long fibo_iterative_queue(int n)
 {
-	//! long longÀ¸·Î Ç¥ÇöÇÒ ¼ö ÀÖ´Â ÇÑ°è¼±.
+	//! long longìœ¼ë¡œ í‘œí˜„í•  ìˆ˜ ìžˆëŠ” í•œê³„ì„ .
 	if (92 < n) return -1;
 	if (n == 0) return 0;
 	if (n == 1) return 1;
 
 	long long queue[3] = { 1, 1 };
 
-	//! idx°¡ À½¼ö°¡ µÇÁö ¾Êµµ·Ï ¹üÀ§¸¦ [3, 6) À¸·Î Á¦ÇÑÇÑ´Ù.
+	//! idxê°€ ìŒìˆ˜ê°€ ë˜ì§€ ì•Šë„ë¡ ë²”ìœ„ë¥¼ [3, 6) ìœ¼ë¡œ ì œí•œí•œë‹¤.
 	int idx = 5;
 	while (n--)
 	{
