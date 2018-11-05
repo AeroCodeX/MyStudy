@@ -1,21 +1,6 @@
 ﻿#include "fibonacci.h"
 #include <stdio.h>
 
-void multAndSet(long long A[2][2], long long B[2][2]) 
-{
-	// A * B를 계산한 뒤, A에 대입한다.
-	long long T[2][2];
-	T[0][0] = A[0][0] * B[0][0] + A[0][1] * B[1][0];
-	T[0][1] = A[0][0] * B[0][1] + A[0][1] * B[1][1];
-	T[1][0] = A[1][0] * B[0][0] + A[1][1] * B[1][0];
-	T[1][1] = A[1][0] * B[0][1] + A[1][1] * B[1][1];
-
-	A[0][0] = T[0][0];
-	A[0][1] = T[0][1];
-	A[1][0] = T[1][0];
-	A[1][1] = T[1][1];
-}
-
 long long fibo_matrix_fast(int n)
 {
 	//! long long으로 표현할 수 있는 한계선.
