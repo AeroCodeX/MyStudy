@@ -24,10 +24,10 @@ bool* generate_prime_brute()
 				if (i%j == 0)
 				{
 					brute[i] = false;
-					goto outerBreak;
+					goto outerContinue;
 				}
 			}
-		outerBreak:
+		outerContinue:
 			;
 		}
 		brute_init = true;
