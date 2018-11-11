@@ -27,7 +27,7 @@ Range binaryFind(int arr[], int s, int e, int v)
 	if (arr[mid] == v)
 	{
 		// 답은 mid를 포함하고 있다.
-		// == 답은 mid 양쪽에서 연속으로 붙어있다.
+		// 답은 mid 양쪽에서 연속으로 붙어있다.
 		int left = mid, right = mid;
 		while (0 <= left && v <= arr[left]) left--;
 		while (right < e && arr[right] <= v) right++;
@@ -40,7 +40,7 @@ Range binaryFind(int arr[], int s, int e, int v)
 	}
 	else if (arr[mid] > v)
 	{
-		// 답은 mid 오른쪽 구간에 있다.
+		// 답은 mid 왼쪽 구간에 있다.
 		return binaryFind(arr, s, mid, v);
 	}
 	// 도달할 수 없는 영역
