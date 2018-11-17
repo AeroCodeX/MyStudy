@@ -27,6 +27,7 @@ double trisection(double s, double e)
 		if (fm1 < fm2) s = m1;
 		if (fm2 < fm1) e = m2;
 	}
+	//! 구간의 중점을 반환한다.
 	return (s + e) / 2;
 }
 
