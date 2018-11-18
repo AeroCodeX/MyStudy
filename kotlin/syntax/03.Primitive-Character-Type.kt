@@ -21,7 +21,7 @@ fun main(args:Array<String>)
     val text2 = """
         Hello,
         World!
-    """.trimIndent()
+    """.trimIndent()  // 왼쪽의 공백을 없애는 메소드.
 
 
     //! 문자열 템플릿
