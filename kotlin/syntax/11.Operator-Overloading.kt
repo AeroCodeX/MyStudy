@@ -12,6 +12,10 @@ fun main(args:Array<String>) {
     println(sumAB) // print "[Wrap] 6"
     println(mulAB) // print "[Wrap] 8"
     println(notC)  // print "[Wrap] 1"
+	
+	
+	val functionClass = FunctionClass()
+    functionClass("World!") // print "Hello, World!"
 }
 
 
@@ -42,3 +46,11 @@ class IntWrap {
 operator fun IntWrap.times(other: IntWrap) :IntWrap {
     return IntWrap(data * other.data)
 }
+
+//! 인스턴스화 후, 함수처럼 사용할 수 있는 클래스
+class FunctionClass{
+    operator fun invoke(word: String){
+        println("Hello, $word!")
+    }
+}
+
