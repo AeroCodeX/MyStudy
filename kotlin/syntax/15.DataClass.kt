@@ -15,9 +15,11 @@ fun main(args:Array<String>) {
     println(f) // 23
 }
 
+
 data class User(val name: String, val age: Int){ }
-//! equals() / hashCode() 자동 생성
-//! toString() 자동 생성
-//! (선언한 순서대로) n번째 요소의 대응되는 componentN() 자동 생성
-//! 일부 멤버필드만 변경한 뒤, 복사하는 copy() 자동 생성
+//! <데이터 클래스의 쓸 때의 간편한 점>
+//! 	equals() / hashCode() 자동 생성
+//! 	toString() 자동 생성 -> User(name=a, age=23) 형태의 문자열로 만들어준다.
+//! 	(선언한 순서대로) n번째 요소의 대응되는 componentN() 자동 생성
+//! 	일부 멤버필드만 변경한 뒤, 복사하는 copy() 자동 생성
 
