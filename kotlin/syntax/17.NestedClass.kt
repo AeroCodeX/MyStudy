@@ -2,7 +2,7 @@
 
 fun main(args:Array<String>) {
     val outer  = Outer()
-    val nested = Outer.Nested()
+    val nested = Outer.Nested()	// 중첩 클래스는 외부 "클래스" 안에 있다.
 
     println(outer.call())   // print "outer"
     println(nested.call())  // print "nested"
