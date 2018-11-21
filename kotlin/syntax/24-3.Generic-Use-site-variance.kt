@@ -1,4 +1,4 @@
-﻿// 24-3. Generic-Use-site variance
+﻿// 24-3. Generic-Use-site variance (in,out-projection)
 
 fun main(args: Array<String>)
 {
