@@ -19,6 +19,7 @@ fun main(args: Array<String>)
 
 // 사용위치 변성이란,
 // 메소드 위치에서 변성 수식어(in, out)를 정의하는 것.
+// T("타입")에 변성 수식어를 붙인다고 해서, 타입 프로젝션이라고 한다.
 //      in  T : 소비만 가능한 타입, 자바의 <? super   T>에 대응한다.
 //      out T : 공급만 가능한 타입, 자바의 <? extends T>에 대응한다.
 class MyArray<T> (val array:Array<T>)
