@@ -1,0 +1,16 @@
+[ {
+  "title" : "MyArticle 1",
+  "date" : 1544109594914,
+  "viewCnt" : 0,
+  "content" : "Hello, Jackson! 1"
+}, {
+  "title" : "MyArticle 2",
+  "date" : 1544109594914,
+  "viewCnt" : 0,
+  "content" : "Hello, Jackson! 2"
+}, {
+  "title" : "MyArticle 3",
+  "date" : 1544109594914,
+  "viewCnt" : 0,
+  "content" : "Hello, Jackson! 3"
+} ]
